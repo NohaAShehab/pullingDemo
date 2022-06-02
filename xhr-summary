@@ -1,0 +1,43 @@
+ xmlhttp request object
+
+   var xhrObj = new XMLHttpRequest()
+
+   /// object provide --> properties
+   1- readystate: indicates the request stage state
+        numerical value  0 ---> 4
+        0--> unintialized
+        1--> loading
+        2--> loaded -->
+        3 -->  loaded , interactivity with server
+        4--> complete -->
+
+   2-status --> overall request process (request status code )
+            200 --> successed
+            300 --> redirection
+            400 --> error in request
+            404 --> request ---> url not found
+            500 --> internal server error
+            502 -->
+   3-responsetext
+        request was completed --> reply with the response
+        response.data --->
+   4-responsexml
+
+    /// object provide functions, handlers
+
+    1- open request
+            --> call server url  ,  using method , async
+
+            open(method, url) // mandetory , [ async, username, password]
+
+    2- send request
+            send(data)
+
+
+   3- onreadystatechange --> each time change happens to the request --> fire action
+
+    obj.onreadystatechange = function (){
+        console.log(;'l)
+    }
+
+
